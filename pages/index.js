@@ -39,7 +39,7 @@ export async function getServerSideProps() {
 
 export default function Home({ locations }) {
   const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: process.env.MAPS_API_KEY,
+    googleMapsApiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY,
     libraries: ["visualization"]
   });
   const [map, setMap] = useState(null);
